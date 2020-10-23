@@ -19,3 +19,15 @@ code {
   min-height: 90vh;
   margin: 40px;
 }
+.font4bold {
+  font-family: 'designova_hgr_bold', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+}
+.image{
+  width: 5em;
+  height: 5em;
+  margin: 1em;
+  display: block;
+}
