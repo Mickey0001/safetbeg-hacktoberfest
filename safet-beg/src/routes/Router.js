@@ -1,9 +1,10 @@
 import React from "react";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Switch, Route, useLocation, Redirect } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
+import Works from "./Works";
 
 const Router = () => {
   const location = useLocation();
@@ -31,6 +32,8 @@ const Router = () => {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Route path="/works/:path" component={Works} />
+        <Redirect to='/' />
       </Switch>
     </animated.div>
   ));

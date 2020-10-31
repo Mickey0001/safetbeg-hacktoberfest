@@ -48,9 +48,10 @@ const Navigation = () => {
             {[
               { title: "Home", route: "/" },
               { title: "About", route: "/about" },
+              { title: "Works", route: "/works/bururet" },
               { title: "Contact", route: "/contact" },
-            ].map(({ title, route }) => (
-              <Link to={route} className={classes.link}>
+            ].map(({ title, route }, key) => (
+              <Link to={route} className={classes.link} key={key}>
                 <ListItem button key={title}>
                   <ListItemText primary={title} />
                 </ListItem>
