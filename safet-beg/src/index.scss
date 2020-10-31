@@ -1,0 +1,34 @@
+@import
+  './base-styles/colors',
+  './base-styles/fonts',
+  './base-styles/text-classes';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: $code-font;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  margin: 40px;
+}
+
+.image{
+  width: 5em;
+  height: 5em;
+  margin: 1em;
+  display: block;
+}
