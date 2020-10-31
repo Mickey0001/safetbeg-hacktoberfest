@@ -1,0 +1,11 @@
+
+.title--bururet{
+  color: #111;
+}
+
+.images-wrapper--bururet{
+  display: flex;
+  @media(max-width: 768px) {
+    flex-direction: column;
+  }
+}
