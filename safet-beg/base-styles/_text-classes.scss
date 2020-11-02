@@ -1,0 +1,29 @@
+
+@import './colors', './fonts';
+
+.title{
+  display: block;
+  color: $text-color;
+  font-weight: $bold;
+  text-align: center;
+  font-size: $large;
+}
+
+.subtitle{
+  display: block;
+  color: $text-color;
+  font-weight: $bold;
+  font-size: $x-medium;
+}
+
+.description{
+  display: block;
+  color: $text-color;
+  font-size: $small;
+}
+
+.description-emphasized{
+  @extend .description;
+  font-style: $italic;
+  font-weight: $bold;
+}
