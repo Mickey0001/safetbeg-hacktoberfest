@@ -1,31 +1,33 @@
 /// <reference types="cypress" />
 
-describe('link tests', () => {
-  cy.visit('http://localhost:3000/')
-  cy.get('button').click()
+  describe('opens all nav links', () => {
 
-  it('opens all nav links', () => {
+    beforeEach(() => {
+      cy.visit('http://localhost:3000/')
+    })
 
     it('should open the home page', () => {
+      cy.get('button').click()
       cy.contains('Home').click()
       cy.location('pathname').should('equal', '/')
     })
 
     it('should open the about page', () => {
+      cy.get('button').click()
       cy.contains('About').click()
       cy.location('pathname').should('equal', '/about')
     })
 
     it('should open the works page', () => {
+      cy.get('button').click()
       cy.contains('Works').click()
       cy.location('pathname').should('equal', '/works/bururet')
     })
 
     it('should open the contact page', () => {
+      cy.get('button').click()
       cy.contains('Contact').click()
       cy.location('pathname').should('equal', '/contact')
     })
 
-
-  })
 })
