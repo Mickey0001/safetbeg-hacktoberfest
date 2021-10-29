@@ -2,10 +2,6 @@
 
   describe('opens all nav links', () => {
 
-    beforeEach(() => {
-      cy.visit('http://localhost:3000/')
-    })
-
     it('should open the home page', () => {
       cy.get('button').click()
       cy.contains('Home').click()
